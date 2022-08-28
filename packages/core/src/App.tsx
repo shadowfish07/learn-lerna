@@ -1,7 +1,7 @@
-import React, { ChangeEvent, ChangeEventHandler } from "react";
-import logo from "./logo.svg";
+import React, { ChangeEvent } from "react";
 import "normalize.css";
 import styled from "styled-components";
+import { Header } from "@todo-list/header";
 
 function App() {
   const [todoList, setTodoList] = React.useState([
@@ -31,9 +31,7 @@ function App() {
 
   return (
     <StyledApp>
-      <StyledHeader>
-        <h1>Hello-Todo-List</h1>
-      </StyledHeader>
+      <Header />
       <StyledBody>
         <StyledNewTodo>
           <input
@@ -65,19 +63,6 @@ function App() {
 const StyledApp = styled.div`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
-`;
-
-const StyledHeader = styled.div`
-  background-color: #bababa;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-
-  h1 {
-    margin: 0;
-  }
 `;
 
 const StyledBody = styled.div`
