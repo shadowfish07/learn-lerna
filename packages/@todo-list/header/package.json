@@ -1,7 +1,7 @@
 {
   "name": "@todo-list/header",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "files": [
     "lib"
   ],
