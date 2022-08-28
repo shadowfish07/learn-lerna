@@ -1,6 +1,6 @@
 {
   "name": "@todo-list/header",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "private": false,
   "files": [
     "lib"
@@ -8,7 +8,7 @@
   "main": "./lib/index.js",
   "types": "./lib/types.d.ts",
   "scripts": {
-    "watch":"tsc --watch",
+    "watch": "tsc --watch",
     "tsc": "tsc"
   },
   "peerDependencies": {
